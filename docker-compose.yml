@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  tgclient:
+    build: 
+      context: ./tgclient
+    ports:
+      - 8084:8084
+      - 8085:8085
+
+  model-server:
+    build: 
+      context: ./YolovServer
+    ports:
+      - 8089:8089
